@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
-  selector: 'demo',
-  templateUrl: 'demo.component.html',
+  selector: 'app',
+  templateUrl: 'app.component.html',
 })
-export class DemoComponent implements OnInit {
+export class AppComponent implements OnInit {
   selectedExample = 'ng-jsf-flex-layout';
   selectedExampleName = 'Flexbox layout';
   selectedFramework = 'material-design';

@@ -12,7 +12,7 @@
           "city": { "type": "string" },
           "state": {
             "type": "string",
-            "enum": ["Maharashtra","Kerala", "Tamil Nadu" ]
+            "enum": ["Maharashtra","Kerala", "Tamil Nadu","Karnatka" ]
           },
           "zip_code": { "type": "string" }
         }
@@ -73,8 +73,8 @@
    
   ],
   "data": {
-    "first_name": "Ashish",
-    "last_name": "Upadhyay",
+    "first_name": "Jon",
+    "last_name": "Deo",
     "address": {
       "street_1": "123 Main St.",
       "city": "Mumbai",

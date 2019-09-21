@@ -7,16 +7,16 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatCardModule } from '@angular/material/card';
 import { RouterModule } from '@angular/router';
 
-import { DemoComponent } from './demo.component';
-import { DemoRootComponent } from './demo-root.component';
+import { AppComponent } from './app.component';
+import { AppRootComponent } from './app-root.component';
 
-import { routes } from './demo.routes';
+import { routes } from './app.routes';
 import {
   MaterialDesignFrameworkModule  
 } from 'angular6-json-schema-form';
 
 @NgModule({
-  declarations: [ DemoComponent, DemoRootComponent],
+  declarations: [ AppComponent, AppRootComponent],
   imports: [
     BrowserModule, BrowserAnimationsModule, FlexLayoutModule, FormsModule,
     HttpClientModule, MatCardModule,
@@ -24,8 +24,8 @@ import {
     MaterialDesignFrameworkModule,
     
   ],
-  bootstrap: [DemoRootComponent]
+  bootstrap: [AppRootComponent]
 })
 
 
-export class DemoModule { }
+export class AppModule { }
