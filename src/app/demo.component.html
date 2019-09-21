@@ -1,0 +1,26 @@
+
+<div fxLayout="row" fxLayoutAlign="space-around start"
+  fxLayout.lt-sm="column" fxLayoutAlign.lt-sm="flex-start center">
+  <mat-card fxFlex="0 0 calc(50% - 12px)">
+    <div *ngIf="visible.form" class="json-schema-form" >
+      <json-schema-form
+        *ngIf="formActive"
+        loadExternalAssets="true"
+        [form]="jsonFormObject"
+        [framework]="selectedFramework"
+        (onSubmit)="onSubmit($event)"
+        >
+      </json-schema-form>
+    </div>
+    <hr>
+    <h4 class="default-cursor" (click)="toggleVisible('output')">
+      {{visible.output ? '▼' : '▶'}} Form Output
+    </h4>
+    <div *ngIf="visible.output" fxLayout="column" >
+      <div>
+        Submitted data — from onSubmit():
+        <pre [class.data-good]="prettySubmittedFormData !== 'null'">{{prettySubmittedFormData}}</pre>
+      </div>
+    </div>
+  </mat-card>
+</div>
